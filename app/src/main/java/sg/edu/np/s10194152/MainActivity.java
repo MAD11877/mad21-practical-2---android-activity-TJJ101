@@ -14,20 +14,19 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        /*Button followbtn = findViewById(R.id.follow);
-        followbtn.setOnClickListener(new View.OnClickListener(){
-            public void Onclick(View v){
-            String text = followbtn.getText().toString();
-            if (text == "Follow"){
-                followbtn.setText("Unfollow");
-            }
-            else {
-                followbtn.setText("Follow");
+        Button followbtn = findViewById(R.id.follow);
+        followbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String text = followbtn.getText().toString();
+                if (text == "Follow") {
+                    followbtn.setText("Unfollow");
+                } else {
+                    followbtn.setText("Follow");
                 }
             }
-        }); */
+        });
     }
-
     @Override
     protected void onStart() {
         super.onStart();
